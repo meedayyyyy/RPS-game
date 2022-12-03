@@ -24,7 +24,12 @@ height: 50%;
 }
 
 .results{
-    display: flex;
+    display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-items: center;
+  font-size: 1.5rem;;
 }
 
 .you{
@@ -59,4 +64,13 @@ button{
     border: 0;
     background: none;
     outline: none;
+}
+
+.result{
+    opacity: .5;
+}
+
+.result-winner{
+    opacity: 1;
+    font-size: 2rem;
 }
